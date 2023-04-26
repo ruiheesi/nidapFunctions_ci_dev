@@ -11,8 +11,7 @@
 
 #' @export 
 #' 
-#' @return 
-
+#' @return NULL
 
 loadPackages <- function(current.packages,
                          suppress = TRUE

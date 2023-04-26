@@ -1,8 +1,9 @@
-# This code will help repriorize package list for NIDAP R sessions.
+# This function repriorizes package lists for NIDAP R sessions.
 
-#' @title Detach Packages
+#' @title Reorder Packages
 #' @description This function detaches all but the main (basic) packages 
-#'        pre-loaded in NIDAP Code Workbook.
+#'        pre-loaded in NIDAP Code Workbook and reattaches the current packages
+#'        to prioritize them for usage in the active code template.
 #' @details This method will detach packages that are not considered basic 
 #'        packages required by Palantir's Code Workbook, and reattach new 
 #'        packages needed by the current template
@@ -12,7 +13,7 @@
 #' 
 #' @return 
 
-detachPackages <- function(package.list) {
+reorderPackages <- function(package.list) {
   
     basic.packages <- c("package:stats",
                       "package:graphics",
