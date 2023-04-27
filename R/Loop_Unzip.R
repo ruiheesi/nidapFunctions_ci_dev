@@ -9,7 +9,6 @@
 #' @param dir File path for zipped data file
 #' 
 #' @importFrom utils unzip
-#' @importFrom base basename
 #' 
 #' @export 
 #' 

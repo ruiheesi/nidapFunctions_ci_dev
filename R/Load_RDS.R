@@ -10,8 +10,6 @@
 #' @param name name of rds file
 #' @param type data type, by default, 'r'.
 #' 
-#' @importFrom base readRDS
-#' 
 #' @export 
 #' 
 #' @return data read from the rds file

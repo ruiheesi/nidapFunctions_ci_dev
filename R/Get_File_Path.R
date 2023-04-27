@@ -10,8 +10,6 @@
 #' @param ext Extension of file, for instance, "xlsx", "csv", "'txt, "RDS".
 #' @param type Data type, by default, 'r'.
 #' 
-#' @importFrom base append unlist lapply
-#' 
 #' @export 
 #' 
 #' @return File path in local node to read into code template/transform 

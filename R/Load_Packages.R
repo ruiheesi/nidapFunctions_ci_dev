@@ -9,8 +9,6 @@
 #' @param current.package vector of packages that are being used in the template
 #' @param suppress boolean to suppress messages.  By default set to TRUE
 #' 
-#' @importFrom base suppressPackageStartupMessages
-
 #' @export 
 #' 
 #' @return NULL

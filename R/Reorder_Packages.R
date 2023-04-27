@@ -10,8 +10,6 @@
 #'
 #' @param package.list packages currently being used in code template
 #' 
-#' @importFrom base search setdiff attachNamespace unlist gregexpr
-#' 
 #' @export 
 #' 
 #' @return NULL

@@ -8,7 +8,7 @@ Maintainer: Cam Maggie <maggie.cam@nih.gov>
 URL: https://github.com/NIDAP-Community/nidapFunctions
 BugReports: https://github.com/NIDAP-Community/nidapFunctions/issues
 Description: Useful Tools for Developing in NIDAP Code Workbook.
-Depends: R (>= 4.0.0)
+Depends: R (>= 4.1.3)
 Imports: base
 Suggests: 
 License: MIT
