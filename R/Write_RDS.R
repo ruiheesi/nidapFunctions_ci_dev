@@ -1,20 +1,18 @@
 # This function writes RDS output files in NIDAP Code Workbook.
 
-#' @title Write RDS
-#' @description This function saves an RDS file as the output data 
-#'        format.
-#' @details This method will save RDS data into a template/code transform
-#'        in Code Workbook.
+#' @title Write RDS file 
+#' @description This function saves an RDS file as output data
+#' @details This method will save data into an RDS file in Code Workbook.
 #'
-#' @param data data to be saved into RDS file
+#' @param data data to be saved into an RDS file
 #' @param filename filename for RDS file, "out.RDS" by default.
 #' @export 
 #' 
-#' @return 
+#' @return NULL
 
 
 writeRDS <- function(data,
-                      filename = "out.RDS"){
+                     filename = "file.RDS"){
   output <- new.output()
   output_fs <- output$fileSystem()
   saveRDS(data, output_fs$get_path(filename, 'w'))

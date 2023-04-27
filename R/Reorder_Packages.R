@@ -1,4 +1,4 @@
-# This function repriorizes package lists for NIDAP R sessions.
+# This function reorders and prioritizes current packages for NIDAP R session.
 
 #' @title Reorder Packages
 #' @description This function detaches all but the main (basic) packages 
@@ -8,10 +8,10 @@
 #'        packages required by Palantir's Code Workbook, and reattach new 
 #'        packages needed by the current template
 #'
-#' @param packages
+#' @param package.list packages currently being used in code template
 #' @export 
 #' 
-#' @return 
+#' @return NULL
 
 reorderPackages <- function(package.list) {
   

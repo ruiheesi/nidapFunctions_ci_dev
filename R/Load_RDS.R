@@ -11,9 +11,9 @@
 #' @param type data type, by default, 'r'.
 #' @export 
 #' 
-#' @return 
+#' @return data read from the rds file
 
-laodRDS <- function(input,
+loadRDS <- function(input,
                      name,
                      type = 'r'){
   
@@ -22,4 +22,6 @@ laodRDS <- function(input,
   data <- readRDS(path)
   return(data)
 }
+
+
 
