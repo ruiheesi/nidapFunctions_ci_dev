@@ -7,6 +7,10 @@
 #'        the unzipped file path for reading into code workbook.
 #'
 #' @param dir File path for zipped data file
+#' 
+#' @importFrom utils unzip
+#' @importFrom base basename
+#' 
 #' @export 
 #' 
 #' @return Local file path for unzipped data file

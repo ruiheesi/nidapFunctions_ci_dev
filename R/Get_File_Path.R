@@ -7,8 +7,11 @@
 #'        the local file path for reading into code workbook.
 #'
 #' @param dataset Data usually in transform input format to import
-#' @param ext Extension of file, for instance, xlsx, csv, txt, RDS.
+#' @param ext Extension of file, for instance, "xlsx", "csv", "'txt, "RDS".
 #' @param type Data type, by default, 'r'.
+#' 
+#' @importFrom base append unlist lapply
+#' 
 #' @export 
 #' 
 #' @return File path in local node to read into code template/transform 
@@ -17,7 +20,7 @@
 getFilePath <- function(data,
                         ext,
                         type = 'r'){
-  fs <- x$fileSystem()
+  fs <- data$fileSystem()
   filepath <- fs$ls(glob = paste0("*.",ext))
   files <- lapply(filepath, function(file) { return(c(file$path, fs$get_path(file$path, type))) })
   output_names<-list()
