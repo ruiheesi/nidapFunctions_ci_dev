@@ -4,14 +4,14 @@
 #' @description This function gets specific file paths for loading files into 
 #'        NIDAP
 #' @details This method will copy files to compute node for reading and returns
-#'        the file path for reading into code workbook.
+#'        the local file path for reading into code workbook.
 #'
 #' @param dataset Data usually in transform input format to import
 #' @param ext Extension of file, for instance, xlsx, csv, txt, RDS.
 #' @param type Data type, by default, 'r'.
 #' @export 
 #' 
-#' @return File path to read into code template/transform 
+#' @return File path in local node to read into code template/transform 
 #' 
 
 getFilePath <- function(data,
