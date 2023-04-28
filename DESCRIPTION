@@ -1,8 +1,8 @@
 Package: nidapFunctions
 Type: Package
 Title: Tools for NIDAP Code Workbook Templates
-Version: 0.1
-Date: 2023-04-20
+Version: 0.6.0
+Date: 2023-04-27
 Authors@R: person("Cam", "Maggie", email = "maggie.cam@nih.gov", role = c("cre","aut"))
 Maintainer: Cam Maggie <maggie.cam@nih.gov>
 URL: https://github.com/NIDAP-Community/nidapFunctions
