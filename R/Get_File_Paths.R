@@ -1,8 +1,7 @@
 # This function creates the file paths for loading into NIDAP code workbook.
 
 #' @title Get file paths
-#' @description This function gets specific file paths for loading files into 
-#'        NIDAP
+#' @description This function gets specific file paths into NIDAP
 #' @details This method will copy files to compute node for reading and returns
 #'        the local file path for reading into code workbook.
 #'
@@ -15,7 +14,7 @@
 #' @return File path in local node to read into code template/transform 
 #' 
 
-getFilePath <- function(data,
+nidapFilePath <- function(data,
                         ext,
                         type = 'r'){
   fs <- data$fileSystem()

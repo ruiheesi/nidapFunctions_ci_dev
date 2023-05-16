@@ -14,13 +14,12 @@
 #' 
 #' @return data read from the rds file
 
-loadRDS <- function(input,
+nidapGetPath <- function(input,
                      name,
                      type = 'r'){
   
   fs <- input$fileSystem()
   path <- fs$get_path(name, type)
-  data <- readRDS(path)
   return(data)
 }
 

@@ -1,10 +1,11 @@
 # This code will help load packages with options to turn messages off.
 
 #' @title Load Packages in NIDAP
-#' @description This function will load packages while suppressing startup 
-#'        messages by default.
+#' @description This function will load packages and reorder package priorities
+#'        while suppressing startup messages by default.
 #' @details This method provides a way to automatically (optionally) suppress 
-#'        package startup messages in NIDAP
+#'        package startup messages in NIDAP and removes all other unnecessary 
+#'        packages
 #'
 #' @param current.package vector of packages that are being used in the template
 #' @param suppress boolean to suppress messages.  By default set to TRUE
@@ -13,7 +14,7 @@
 #' 
 #' @return NULL
 
-loadPackages <- function(current.packages,
+nidapLoadPackages <- function(current.packages,
                          suppress = TRUE
                          ){
     

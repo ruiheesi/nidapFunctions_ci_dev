@@ -1,4 +1,4 @@
-{% set version = '0.5' %}
+{% set version = '0.6.0' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -10,7 +10,7 @@ package:
 source:
 
   git_url: https://github.com/NIDAP-Community/nidapFunctions
-  git_tag: v0.5.0
+  git_tag: v0.6.0
 
 build:
   merge_build_host: True  # [win]
@@ -61,8 +61,8 @@ about:
 # Package: nidapFunctions
 # Type: Package
 # Title: Tools for NIDAP Code Workbook Templates
-# Version: 0.1
-# Date: 2023-04-20
+# Version: 0.6.0
+# Date: 2023-04-27
 # Authors@R: person("Cam", "Maggie", email = "maggie.cam@nih.gov", role = c("cre","aut"))
 # Maintainer: Cam Maggie <maggie.cam@nih.gov>
 # URL: https://github.com/NIDAP-Community/nidapFunctions
