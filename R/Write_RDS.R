@@ -7,8 +7,6 @@
 #' @param data data to be saved into an RDS file
 #' @param filename filename for RDS file, "out.RDS" by default.
 #' 
-#' @importFrom FoundrySparkR new.output
-#' 
 #' @export 
 #' 
 #' @return NULL
