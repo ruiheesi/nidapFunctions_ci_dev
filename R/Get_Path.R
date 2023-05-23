@@ -20,7 +20,7 @@ nidapGetPath <- function(input,
   
   fs <- input$fileSystem()
   path <- fs$get_path(name, type)
-  return(data)
+  return(path)
 }
 
 
