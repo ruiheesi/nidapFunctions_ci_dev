@@ -4,11 +4,11 @@
 #' @description This function will load packages and reorder package priorities
 #'        while suppressing startup messages by default.
 #' @details This method provides a way to automatically (optionally) suppress 
-#'        package startup messages in NIDAP and removes all other unnecessary 
+#'        package start up messages in NIDAP and removes all other unnecessary 
 #'        packages
 #'
-#' @param current.package vector of packages that are being used in the template
-#' @param suppress boolean to suppress messages.  By default set to TRUE
+#' @param current.package Vector of packages that are being used in the template
+#' @param suppress Boolean to suppress messages.  By default set to TRUE
 #' 
 #' @export 
 #' 
@@ -33,11 +33,13 @@ nidapLoadPackages <- function(current.packages,
                         "package:futile.logger",
                         "package:uuid")
     
-    package.list <- search()[ifelse(unlist(gregexpr("package:",search()))==1,TRUE,FALSE)]
+    package.list <- search()[ifelse(unlist(gregexpr("package:",search()))==1,
+                                    TRUE,FALSE)]
     package.list <- setdiff(package.list,basic.packages)
     
     #If there are existing non-basic packages, detach them.
-    if (length(package.list)>0)  for (package in package.list) detach(package, character.only=TRUE)
+    if (length(package.list)>0)  for (package in package.list) 
+              detach(package, character.only=TRUE)
     
     #load current packages with option to suppress startup messages
     for(package in current.packages){
