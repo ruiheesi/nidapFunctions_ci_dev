@@ -31,7 +31,8 @@ nidapLoadPackages <- function(current.packages,
                         "package:jsonlite",
                         "package:FoundrySparkR",
                         "package:futile.logger",
-                        "package:uuid")
+                        "package:uuid"
+                        "package:nidapFunctions")
     
     package.list <- search()[ifelse(unlist(gregexpr("package:",search()))==1,
                                     TRUE,FALSE)]
