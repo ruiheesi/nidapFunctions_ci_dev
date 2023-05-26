@@ -45,7 +45,7 @@ nidapLoadPackages <- function(current.packages,
     #load current packages with option to suppress startup messages
     for(package in current.packages){
       if(suppress == TRUE){
-        suppressPackageStartupMessages(library(package, character.only=TRUE))
+        suppressWarnings(suppressPackageStartupMessages(library(package, character.only=TRUE)))
       } else {
         library(package, character.only=TRUE)
       }
