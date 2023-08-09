@@ -1,9 +1,0 @@
-channels:
-- conda-forge
-- defaults
-dependencies:
-- r-base==4.1.3
-- r-devtools
-- r-renv
-- git
-name: nidapFunctions_ci_dev
