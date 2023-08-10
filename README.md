@@ -23,3 +23,7 @@ Deployment Status: Artifacts:ArtifactAlreadyExists
 
 Datetime: , Version:  r-nidapfunctions-0.7.10-r41_0.tar.bz2
 Deployment Status: Success
+
+Datetime: , Version:  r-nidapfunctions-0.7.10-r41_0.tar.bz2
+
+Deployment Status: Artifacts:ArtifactAlreadyExists
