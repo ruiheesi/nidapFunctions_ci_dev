@@ -20,3 +20,6 @@ Datetime: 2023-08-10 13:32:31, Version:
 
 Datetime: , Version:  r-nidapfunctions-0.7.8-r41_0.tar.bz2
 Deployment Status: Artifacts:ArtifactAlreadyExists
+
+Datetime: , Version:  r-nidapfunctions-0.7.10-r41_0.tar.bz2
+Deployment Status: Success
